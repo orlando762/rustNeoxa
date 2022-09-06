@@ -2,6 +2,15 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+        p{
+            font-weight:bold;
+            text-align: center;
+        }
+        .card-text{
+            text-align:center;
+        }
+    </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,8 +21,9 @@
     <title>Cotação Atual</title>
   </head>
   <body>
+    
     <div><h1>
-        <p>Cotação Atual rustNeoxa <br><span id="datetime"></span></p>
+        <p>Cotação Atual rustNeoxa <br><span id=""></span></p>
     </h1></div>
     
 
@@ -29,23 +39,121 @@
     -->
 
 <div class="row">
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://static.wixstatic.com/media/fb2b40_c65114205a5a4e2eb02aa78040bb72bc~mv2.png/v1/fill/w_51,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo-Round.png" class="card-img-top" width="100"height="150">
+        <div class="card-body">
+         <p>Valor da moeda em BRL</p>
+         <p class="card-text" id="coin">-</p>
+         </div>
+    </div>
+
    <div class="card" style="width: 18rem;">
-     <img src="https://w7.pngwing.com/pngs/909/225/png-transparent-rust-rock-metal-information-stone-game-gold-iron-thumbnail.png" class="card-img-top" alt="...">
+     <img src="https://static.wikia.nocookie.net/play-rust/images/5/57/Hammer_icon.png/revision/latest?cb=20151106061319" class="card-img-top" width="100"height="150">
      <div class="card-body">
+      <p>Reparar estruturas</p>
       <p class="card-text" id="structrepair">-</p>
     </div>
   </div>
 
   <div class="card" style="width: 18rem;">
-    <img src="https://w7.pngwing.com/pngs/909/225/png-transparent-rust-rock-metal-information-stone-game-gold-iron-thumbnail.png" class="card-img-top" alt="...">
+    <img src="https://static.wikia.nocookie.net/play-rust/images/e/e7/Wood_Collectible.jpg/revision/latest/scale-to-width-down/1000?cb=20160526091256" class="card-img-top" width="100"height="150">
     <div class="card-body">
+     <p>Pegar madeira do chão</p>
      <p class="card-text" id="woodpickup">-</p>
    </div>
  </div>
 
-  </div>
+ <div class="card" style="width: 18rem;">
+    <img src="https://static.wikia.nocookie.net/play-rust/images/7/7d/Metal_Collectible.jpg/revision/latest/scale-to-width-down/1000?cb=20160526091257" class="card-img-top" width="100"height="150">
+    <div class="card-body">
+     <p>Pegar minerio do chão</p>
+     <p class="card-text" id="orepickup">-</p>
+   </div>
+ </div>
+
+ <div class="card" style="width: 18rem;">
+    <img src="https://static.wikia.nocookie.net/play-rust/images/4/47/Hemp_Fibre_Collectible.jpg/revision/latest/scale-to-width-down/1000?cb=20160525223532" class="card-img-top" width="100"height="150">
+    <div class="card-body">
+     <p>Pegar plantas do chão</p>
+     <p class="card-text" id="plantgather">-</p>
+   </div>
+ </div>
+
+ <div class="card" style="width: 18rem;">
+    <img src="https://static.wikia.nocookie.net/play-rust/images/6/6c/Timed_Explosive_Charge_icon.png/revision/latest?cb=20151106061610" class="card-img-top" width="100"height="150">
+    <div class="card-body">
+     <p>Usar C4</p>
+     <p class="card-text" id="explosive_c4">-</p>
+   </div>
+ </div>
+
+ <div class="card" style="width: 18rem;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr1Djlobp5PJAEHjeasYf-I1SUt5rlutsY3iXmiqIVS7RnMwdZtz2wlVuiuv9AjArhzwo&usqp=CAU" class="card-img-top" width="100"height="150">
+    <div class="card-body">
+     <p>Usar Satchel</p>
+     <p class="card-text" id="explosive_satchel">-</p>
+   </div>
+ </div>
+
+ <div class="card" style="width: 18rem;">
+    <img src="https://static.wikia.nocookie.net/play-rust/images/9/95/Rocket_icon.png/revision/latest/top-crop/width/360/height/360?cb=20151106061039" class="card-img-top" width="100"height="150">
+    <div class="card-body">
+     <p>Usar Rocket</p>
+     <p class="card-text" id="rocket_basic">-</p>
+   </div>
+ </div>
+
+ <div class="card" style="width: 18rem;">
+    <img src="https://static.wikia.nocookie.net/play-rust/images/f/f4/High_Velocity_Rocket_icon.png/revision/latest/top-crop/width/360/height/360?cb=20151106054436" class="card-img-top" width="100"height="150">
+    <div class="card-body">
+     <p>Usar Rocket HV</p>
+     <p class="card-text" id="rocket_hv">-</p>
+   </div>
+ </div>
+
+ <div class="card" style="width: 18rem;">
+    <img src="https://static.wikia.nocookie.net/play-rust/images/3/3c/Barrel_Hazard.jpg/revision/latest/scale-to-width-down/1000?cb=20160525223526" class="card-img-top" width="100"height="150">
+    <div class="card-body">
+     <p>Destruir Barril</p>
+     <p class="card-text" id="barrel">-</p>
+   </div>
+ </div>
+
+ <div class="card" style="width: 18rem;">
+    <img src="https://static.wikia.nocookie.net/play-rust/images/0/06/Hatchet_icon.png/revision/latest?cb=20151106061743" class="card-img-top" width="100"height="150">
+    <div class="card-body">
+     <p>Bater em arvore</p>
+     <p class="card-text" id="treehit">-</p>
+   </div>
+ </div>
+
+ <div class="card" style="width: 18rem;">
+    <img src="https://static.wikia.nocookie.net/play-rust/images/8/86/Pick_Axe_icon.png/revision/latest?cb=20151106061323" class="card-img-top" width="100"height="150">
+    <div class="card-body">
+     <p>Bater em minerios</p>
+     <p class="card-text" id="orehit">-</p>
+   </div>
+ </div>
+
+ <div class="card" style="width: 18rem;">
+    <img src="https://static.wikia.nocookie.net/play-rust/images/4/4b/Rust_Blue_Scientist.jpg/revision/latest/scale-to-width-down/1000?cb=20180806100149" class="card-img-top" width="100"height="150">
+    <div class="card-body">
+     <p>Matar NPC</p>
+     <p class="card-text" id="npckill">-</p>
+   </div>
+ </div>
+
+ <div class="card" style="width: 18rem;">
+    <img src="https://static.wikia.nocookie.net/play-rust/images/a/aa/Boar_View.jpg/revision/latest/scale-to-width-down/1000?cb=20160525222807" class="card-img-top" width="100"height="150">
+    <div class="card-body">
+     <p>Matar Animais</p>
+     <p class="card-text" id="animalkill">-</p>
+   </div>
+ </div>
+</div>
+
     <script>
-        var fieldcards = ["structrepair","woodpickup","orepickup","plantgather","explosive_c4","explosive_satchel","rocket_basic","rocket_hv","playerkill","barrel","treehit","orehit","npckill","animalkill"]
         async function getData(){
             try {
                 const response = await fetch('https://api.neoxa.net/api/v1/rust/rates')
@@ -72,5 +180,22 @@
             document.getElementById('animalkill').innerHTML=data.animalkill
         }
     </script>
+
+    <script>
+            async function getCoin(){
+                try {
+                    const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=neoxa&vs_currencies=brl')
+                    const coin = await response.json()
+                    showcoin(coin)
+                } catch (error) {
+                    console.log(error)
+                }
+            }
+            getCoin()
+            function showcoin(coin){
+            document.getElementById('coin').innerHTML=coin.neoxa.brl
+            }
+  </script>
+
   </body>
 </html>
